@@ -14,6 +14,8 @@ RUN docker-php-ext-install gd
 #RUN docker-php-ext-install imagick 
 # RUN composer install
 
+RUN a2enmod rewrite
+
 RUN apt-get update && apt-get install -y \
     libmagickwand-dev --no-install-recommends \
     && pecl install imagick \
