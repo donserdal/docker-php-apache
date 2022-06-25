@@ -1,4 +1,4 @@
-FROM php:8.1-apache
+FROM php:7.4.30-apache
 LABEL maintainer="Serdal Ozkan <Donserdal@hotmail.com>"
 
 RUN apt-get update -y && apt-get install -y libpng-dev libpq-dev libzip-dev libonig-dev
